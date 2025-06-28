@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What is included in the tour packages?",
+      "answer": "Our tour packages typically include accommodation, transportation, professional guide services, entrance fees to monuments, and specified meals. Detailed inclusions are listed for each individual tour package."
+    },
+    {
+      "id": 2,
+      "question": "How far in advance should I book my tour?",
+      "answer": "We recommend booking at least 2-3 weeks in advance, especially during peak tourist season (October to March). For palace stays and wildlife safaris, earlier booking is preferred due to limited availability."
+    },
+    {
+      "id": 3,
+      "question": "Are your tours suitable for solo travelers?",
+      "answer": "Absolutely! Many of our guests are solo travelers. We ensure safe, comfortable, and engaging experiences for individuals. You can join group tours or opt for private guided experiences."
+    },
+    {
+      "id": 4,
+      "question": "What should I pack for the tours?",
+      "answer": "Pack comfortable walking shoes, lightweight clothing, sunhat, sunscreen, and a camera. For wildlife tours, bring binoculars and neutral-colored clothing. We provide a detailed packing list upon booking."
+    },
+    {
+      "id": 5,
+      "question": "Do you provide airport transfers?",
+      "answer": "Yes, airport transfers are included in most of our multi-day tour packages. For day trips, airport transfers can be arranged at an additional cost. Details are specified in each tour description."
+    },
+    {
+      "id": 6,
+      "question": "What is your cancellation policy?",
+      "answer": "Cancellations made 30+ days before departure receive full refund. 15-30 days: 50% refund. Less than 15 days: 25% refund. No refund for no-shows. Travel insurance is recommended for unexpected situations."
+    },
+    {
+      "id": 7,
+      "question": "Are the tours wheelchair accessible?",
+      "answer": "Some of our tours can accommodate wheelchair users, though many historical sites have limited accessibility. Please inform us of any mobility requirements when booking so we can customize the itinerary accordingly."
+    },
+    {
+      "id": 8,
+      "question": "Do you offer vegetarian meal options?",
+      "answer": "Yes, we cater to all dietary requirements including vegetarian, vegan, and specific dietary restrictions. Please inform us of your preferences when booking, and we'll ensure suitable meal arrangements."
+    }
+  ]
+}
