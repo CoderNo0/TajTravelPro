@@ -37,23 +37,7 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  // Serve static files from public directory
-  app.use(express.static('public'));
-  
-  // Handle tour detail page routes
-  app.get('/tour-detail.html', (req, res) => {
-    res.sendFile('tour-detail.html', { root: 'public' });
-  });
-  
-  // Handle index page
-  app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: 'public' });
-  });
-  
-  // Catch all routes and redirect to index
-  app.get('*', (req, res) => {
-    res.sendFile('index.html', { root: 'public' });
-  });
+  const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
@@ -63,10 +47,24 @@ app.use((req, res, next) => {
     throw err;
   });
 
+  // importantly only setup vite in development and after
+  // setting up all the other routes so the catch-all route
+  // doesn't interfere with the other routes
+  if (app.get("env") === "development") {
+    await setupVite(app, server);
+  } else {
+    serveStatic(app);
+  }
+
   // ALWAYS serve the app on port 5000
+  // this serves both the API and the client.
+  // It is the only port that is not firewalled.
   const port = 5000;
-  const server = app.listen(port, "0.0.0.0", () => {
-    log(`serving static website on port ${port}`);
-    log(`visit: http://localhost:${port}`);
+  server.listen({
+    port,
+    host: "0.0.0.0",
+    reusePort: true,
+  }, () => {
+    log(`serving on port ${port}`);
   });
 })();
