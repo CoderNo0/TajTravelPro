@@ -8,8 +8,14 @@ const EMAILJS_CONFIG = {
   contactTemplateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || 'contact_template_default'
 };
 
-// Initialize EmailJS
-emailjs.init(EMAILJS_CONFIG.publicKey);
+// Initialize EmailJS with error handling
+try {
+  if (EMAILJS_CONFIG.publicKey && EMAILJS_CONFIG.publicKey !== 'default_key') {
+    emailjs.init(EMAILJS_CONFIG.publicKey);
+  }
+} catch (error) {
+  console.warn('EmailJS initialization failed:', error);
+}
 
 export interface BookingEmailData {
   to_email: string;
