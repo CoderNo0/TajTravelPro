@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj India Tour and Travel - Discover the Golden Triangle & Beyond</title>
+    <meta name="description" content="Experience the magnificent heritage of Delhi, Agra, and Jaipur with our expertly crafted tours. From the iconic Taj Mahal to royal palaces of Rajasthan - discover incredible India with Taj India Tours.">
+    <meta property="og:title" content="Taj India Tour and Travel - Golden Triangle Tours">
+    <meta property="og:description" content="Discover India's most captivating destinations with our carefully curated tour packages, showcasing the country's rich heritage and natural beauty.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🏛️ Taj India Tours</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#tours" class="nav-link">Tours</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the <span class="highlight">Golden Triangle</span></h1>
+            <p class="hero-subtitle">Experience the magnificent heritage of Delhi, Agra, and Jaipur with expertly crafted tours</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50,000+</span>
+                    <span class="stat-label">Happy Travelers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToTours()">
+                    <i class="fas fa-compass"></i> Explore Tours
+                </button>
+                <button class="btn-secondary" onclick="openBookingModal()">
+                    <i class="fas fa-calendar"></i> Book Now
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Taj Mahal" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>Government Certified</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Safe Travel</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>Best Price Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section id="tours" class="tours-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Tour Packages</h2>
+                <p>Handpicked experiences for unforgettable journeys</p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="tour-filters">
+                <button class="filter-btn active" data-filter="all">All Tours</button>
+                <button class="filter-btn" data-filter="golden-triangle">Golden Triangle</button>
+                <button class="filter-btn" data-filter="rajasthan">Rajasthan</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="price-filter">
+                <label for="priceRange">Price Range: $<span id="priceValue">500</span></label>
+                <input type="range" id="priceRange" min="100" max="2000" value="500" step="50">
+            </div>
+
+            <!-- Tours Grid -->
+            <div id="toursGrid" class="tours-grid">
+                <!-- Tours will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real people</p>
+            </div>
+            <div id="reviewsContainer" class="reviews-container">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our tours</p>
+            </div>
+            <div id="faqContainer" class="faq-container">
+                <!-- FAQs will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to start your incredible journey? Contact us today!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@tajindiatours.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+                
+                <!-- Google Maps -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8947116090344!2d77.2090212746608!3d28.61393757570666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1672824000000!5m2!1sen!2sin"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🏛️ Taj India Tours</h3>
+                    <p>Creating unforgettable memories across incredible India</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Taj India Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Tour</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email *</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="tourPackage">Select Tour *</label>
+                    <select id="tourPackage" name="tourPackage" required>
+                        <option value="">Choose a tour...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="travelDate">Preferred Date *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="travelers">Number of Travelers</label>
+                    <select id="travelers" name="travelers">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requirements</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Booking Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="thank-you-content">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You!</h2>
+                <p>Your booking request has been sent successfully. We'll contact you within 24 hours to confirm your tour details.</p>
+                <button class="btn-primary" onclick="closeThankYouModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/emailjs-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
