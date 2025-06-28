@@ -1,0 +1,172 @@
+{
+  "tours": [
+    {
+      "id": "golden-triangle-3-days",
+      "title": "Golden Triangle 3 Days",
+      "description": "Explore Delhi, Agra, and Jaipur in this classic 3-day journey covering India's most iconic monuments.",
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 299,
+      "originalPrice": 399,
+      "duration": "3 Days",
+      "location": "Delhi, Agra, Jaipur",
+      "category": "golden-triangle",
+      "rating": 4.8,
+      "reviewCount": 324,
+      "badge": "Bestseller",
+      "urgency": "Only 3 spots left this month!",
+      "highlights": [
+        "Visit the iconic Taj Mahal at sunrise",
+        "Explore the majestic Red Fort in Delhi",
+        "Discover the Pink City of Jaipur",
+        "Experience Amber Fort elephant ride"
+      ],
+      "includes": [
+        "2 nights accommodation",
+        "Professional guide",
+        "All entrance fees",
+        "Transportation",
+        "Daily breakfast"
+      ]
+    },
+    {
+      "id": "rajasthan-royal-7-days",
+      "title": "Rajasthan Royal Experience",
+      "description": "Immerse yourself in the royal heritage of Rajasthan with palace stays and cultural experiences.",
+      "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 799,
+      "originalPrice": 999,
+      "duration": "7 Days",
+      "location": "Jaipur, Udaipur, Jodhpur",
+      "category": "rajasthan",
+      "rating": 4.9,
+      "reviewCount": 156,
+      "badge": "Premium",
+      "urgency": "Limited palace rooms available!",
+      "highlights": [
+        "Stay in heritage palaces",
+        "Sunset boat ride in Udaipur",
+        "Explore Mehrangarh Fort",
+        "Camel safari in Thar Desert"
+      ],
+      "includes": [
+        "6 nights palace accommodation",
+        "All meals included",
+        "Private guide and driver",
+        "Cultural performances",
+        "Airport transfers"
+      ]
+    },
+    {
+      "id": "cultural-delhi-2-days",
+      "title": "Cultural Delhi Discovery",
+      "description": "Deep dive into Delhi's rich culture, street food, and hidden gems beyond the tourist trail.",
+      "image": "https://images.unsplash.com/photo-1580842948408-5e56a7e9b8e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 149,
+      "originalPrice": 199,
+      "duration": "2 Days",
+      "location": "Delhi",
+      "category": "cultural",
+      "rating": 4.7,
+      "reviewCount": 89,
+      "badge": "Local Favorite",
+      "urgency": "Book today for weekend slots!",
+      "highlights": [
+        "Street food walking tour",
+        "Visit to local artisan workshops",
+        "Old Delhi rickshaw ride",
+        "Spice market exploration"
+      ],
+      "includes": [
+        "1 night accommodation",
+        "Food tour with 10+ tastings",
+        "Local guide",
+        "All transportation",
+        "Workshop visits"
+      ]
+    },
+    {
+      "id": "agra-day-trip",
+      "title": "Agra Same Day Trip",
+      "description": "Perfect day trip to Agra covering Taj Mahal, Agra Fort, and local handicraft shopping.",
+      "image": "https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 99,
+      "originalPrice": 129,
+      "duration": "1 Day",
+      "location": "Agra",
+      "category": "golden-triangle",
+      "rating": 4.6,
+      "reviewCount": 234,
+      "badge": "Quick Escape",
+      "urgency": "Last 5 spots for this week!",
+      "highlights": [
+        "Taj Mahal guided tour",
+        "Agra Fort exploration",
+        "Marble inlay workshop visit",
+        "Local lunch included"
+      ],
+      "includes": [
+        "Round-trip transportation",
+        "Entry tickets",
+        "Professional guide",
+        "Lunch at local restaurant",
+        "Shopping assistance"
+      ]
+    },
+    {
+      "id": "wildlife-ranthambore-3-days",
+      "title": "Ranthambore Wildlife Safari",
+      "description": "Exciting wildlife adventure in Ranthambore National Park with chances to spot Bengal tigers.",
+      "image": "https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 349,
+      "originalPrice": 449,
+      "duration": "3 Days",
+      "location": "Ranthambore",
+      "category": "wildlife",
+      "rating": 4.5,
+      "reviewCount": 67,
+      "badge": "Adventure",
+      "urgency": "Safari permits limited!",
+      "highlights": [
+        "4 jungle safaris included",
+        "High chance of tiger sighting",
+        "Bird watching opportunities",
+        "Photography guidance"
+      ],
+      "includes": [
+        "2 nights resort stay",
+        "All safari permits",
+        "Naturalist guide",
+        "All meals",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "spiritual-varanasi-4-days",
+      "title": "Spiritual Varanasi Journey",
+      "description": "Experience the spiritual essence of India in the holy city of Varanasi with Ganga Aarti.",
+      "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "price": 279,
+      "originalPrice": 349,
+      "duration": "4 Days",
+      "location": "Varanasi",
+      "category": "cultural",
+      "rating": 4.7,
+      "reviewCount": 112,
+      "badge": "Spiritual",
+      "urgency": "Festival season - book early!",
+      "highlights": [
+        "Sunrise boat ride on Ganges",
+        "Evening Ganga Aarti ceremony",
+        "Ancient temple visits",
+        "Silk weaving workshop"
+      ],
+      "includes": [
+        "3 nights heritage accommodation",
+        "Daily breakfast",
+        "Boat rides",
+        "Temple visits",
+        "Cultural guide"
+      ]
+    }
+  ]
+}
